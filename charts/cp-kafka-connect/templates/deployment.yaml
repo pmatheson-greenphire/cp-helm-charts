@@ -43,8 +43,6 @@ spec:
           - -XX:+UnlockExperimentalVMOptions
           - -XX:+UseCGroupMemoryLimitForHeap
           - -XX:MaxRAMFraction=1
-          - -Xmx1G
-          - -Xms1G
           - -XshowSettings:vm
           - -jar
           - jmx_prometheus_httpserver.jar
