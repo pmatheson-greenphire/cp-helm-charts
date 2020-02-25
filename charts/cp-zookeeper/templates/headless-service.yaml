@@ -13,6 +13,8 @@ spec:
       name: server
     - port: {{ .Values.leaderElectionPort }}
       name: leader-election
+    - port: {{ .Values.clientPort }}
+      name: client
   clusterIP: None
   selector:
     app: {{ template "cp-zookeeper.name" . }}
